@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>16-FILIP DOMACI ZADATAK 2-URADJEN ZADATAK-INSERTBEFORE( ) METODA</title>
+<link rel="stylesheet" type="text/css" href="insertbeforemetoda1.css">
+
+</head>
+
+<body>
+
+<!--U PRVOM DIVU POTREBNO JE IZMEDJU DVA PARAGRAFA UBACITI h1 ELEMENT KOJI SADRZI
+TEKST "NAKNADNO UBACENO".
+ZATIM U DRUGOM DIVU UBACITI h3 ELEMENT ISPRED OBA PARAGRAFA SA TEKSTOM 
+"PRVI U DRUGOM DIVU".
+NAKON STO SU NASLOVI UBACENI POTREBNO JE PROMENITI IM BOJU KORISTECI
+JAVASCRIPT.   -->
+
+<div id="div1">
+<p id="bata1">"Napravili smo prvi Batin paragraf!"</p>
+<p id="bata2">"Napravili smo drugi Batin paragraf!"</p>
+</div>
+        
+<div id="div2">
+<p id="seka1">"Napravili smo prvi Sekin paragraf!"</p>
+<p id="seka2">"Napravili smo drugi Sekin paragraf!"</p>
+</div>
+        
+
+<script>
+
+let roditeljDiv=document.getElementById("div1");
+let noviParagraf=document.createElement("h1");
+let batasan=document.createTextNode("Naknadno ubaceno");
+
+noviParagraf.appendChild(batasan);
+
+let stariPar=document.getElementById("bata2");
+
+roditeljDiv.insertBefore(noviParagraf, stariPar);
+
+
+let gurniMe=document.getElementById("div2");
+let idemoDalje=document.createElement("h3");
+let noviPar=document.createTextNode("Prvi u drugom divu");
+
+idemoDalje.appendChild(noviPar);
+
+gurniMe.appendChild(idemoDalje);
+
+
+noviParagraf.style.color="orange";
+idemoDalje.style.color="violet";
+
+</script>
+
+<script src="insertbeforemetoda1.js"></script>
+
+</body>
+</html>

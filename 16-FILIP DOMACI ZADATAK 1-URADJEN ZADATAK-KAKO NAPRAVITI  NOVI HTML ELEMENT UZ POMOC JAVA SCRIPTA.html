@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>16-FILIP DOMACI ZADATAK 1-URADJEN ZADATAK-KAKO NAPRAVITI NOVI HTML ELEMENT UZ POMOC JAVA SCRIPTA</title>
+<link rel="stylesheet" type="text/css" href="novihtmlelement1.css">
+</head>
+
+<body>
+
+<!-- 1.ZADATAK
+
+NAPRAVITI HTML STRANICU KOJA SADRZI DIV U KOME SE NALAZE TRI PARAGRAFA.
+ZATIM KREIRATI NOVI h1 ELEMENT I DODATI GA UNUTAR DIVA.
+UNUTAR h1 ELEMENTA JE POTREBNO DA SE NALAZI TEKST "USPEO SAM".  --->
+
+<div id="div1">
+<p id="paragraf1">Ovo je prvi paragraf!</p>
+<p id="paragraf2">Ovo je drugi paragraf!</p>
+<p id="paragraf3">Ovo je treci paragraf</p>
+        
+
+</div>
+
+<script>
+
+let roditeljDiv=document.getElementById("div1");
+let b=document.createElement("p");
+let c=document.createTextNode("Uspeo sam !!!");
+b.appendChild(c);
+roditeljDiv.appendChild(b);
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+<script src="novihtmlelement1.js"></script>
+</html>
