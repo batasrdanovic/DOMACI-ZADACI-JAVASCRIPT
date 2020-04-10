@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>15-FILIP DOMACI ZADATAK 3-URADJEN ZADATAK-ADDEVENTLISTENER METOD</title>
+<link rel="stylesheet" type="text/css" href="addeventlistenermetod1.css">
+</head>
+
+<body>
+
+<!--- 3.ZADATAK
+
+POTREBNO JE NAPRAVITI HTML STRANICU KOJA POSEDUJE VISE PARAGRAFA.
+ZATIM SVIM PARAGRAFIMA DODATI EVENT LISTENER I PROMENITI IM BOJU KADA SE DOGODI 
+DOGADJAJ KOJI STE PROSLEDILI METODI ADDEVENTLISTENER().  --->
+
+
+<p id="objavi">"Ovo je Batin paragraf"</p>
+<p id="pokreni">"Ako si me pokrenuo na stranici onda me klikni!"</p>
+<p id="klikni">"Sada mozes da me prikazes"</p>
+
+<script>
+
+function reakcija(){
+a.style.color="red";
+}
+
+let a=document.getElementById("objavi");
+a.addEventListener("click", reakcija);
+
+
+function iznenadi(){
+b.style.color="pink";
+}
+
+let b=document.getElementById("pokreni");
+b.addEventListener("click", iznenadi);
+
+
+function pokreni(){
+c.style.color="blue";
+}
+
+let c=document.getElementById("klikni");
+c.addEventListener("click", pokreni);
+
+/* ILI MOZEMO DA DIREKTNO NAPISEMO KROZ EVENTLISTENER KROZ FUNKCIJU DA
+POKRENEMO NEKI DOGADJAJ   */
+
+a.addEventListener("mouseover", function(){
+a.style.color="violet";
+
+})  
+
+b.addEventListener("mouseover", function(){
+b.style.color="green";
+
+}) 
+
+
+c.addEventListener("mouseover", function(){
+c.style.color="orange";
+
+}) 
+
+
+
+
+</script>
+
+
+</body>
+<script src="addeventlistenermetod1.js"></script>
+</html>
