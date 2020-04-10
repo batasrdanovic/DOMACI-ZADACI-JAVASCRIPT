@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>16-FILIP DOMACI ZADATAK 7-URADJEN ZADATAK-METODA SETINTERVAL( )</title>
+<link rel="stylesheet" type="text/css" href="metodasetinterval1.css">
+</head>
+
+<body>
+
+<!--7.ZADATAK
+
+DEFINISATI FUNKCIJU KOJA OD KORISNIKA TRAZI UNOS BROJA GODINA I ZATIM ISPISUJE
+PORUKU DA LI JE KORISNIK PUNOLETAN ILI NE.
+FUNKCIJA TREBA DA SE POZIVA SVAKIH 20 SEKUNDI.   --->
+
+<script>
+
+function brojGodina(){
+
+    let godina = prompt("Unesite godine: ");
+
+if(godina >= 18){
+    alert("Pristup je dozvoljen jer ste punoletni");
+} else {
+    alert("Pristup je odbijen jer ste maloletni ");
+
+}
+}
+
+
+setInterval(brojGodina, 20000);
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+<script src="metodasetinterval1.js"></script>
+</html>

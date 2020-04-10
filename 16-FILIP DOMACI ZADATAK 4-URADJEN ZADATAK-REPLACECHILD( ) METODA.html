@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>16-FILIP DOMACI ZADATAK 4-URADJEN ZADATAK-REPLACECHILD( ) METODA</title>
+<link rel="stylesheet" type="text/css" href="replacechildmetoda1.css">
+</head>
+
+<body>
+
+<!--ZADATAK
+
+UZ POMOC METODE REPLACECHILD() ZAMENI TRI HTML ELEMENTA NEKE VASE HTML STRANICE. -->
+
+
+<div id="master">
+<p id="jedan">Ovo je prvi pasus!</p>
+<p id="dva">Ovo je drugi pasus!</p>
+<P id="tri">Ovo je treci pasus!</P>
+</div>
+
+<script>
+
+let roditeljDiv=document.getElementById("master").addEventListener("mouseover",function(){
+
+let sledi=document.getElementById("jedan");
+let idemoDva=document.getElementById("dva");
+let paragrafzaZamenu=document.getElementById("tri");
+
+let noviParagraf=document.createElement("p1");
+let ispisi=document.createElement("p2");
+let dopuni=document.createElement("p3");
+
+let opetIzmena=document.createTextNode("izmenjen prvi pasus");
+let menjamoParagraf=document.createTextNode("izmenjen treci pasus");
+let drugiMenjamo=document.createTextNode("izmenjen drugi pasus");
+
+noviParagraf.appendChild(menjamoParagraf);
+ispisi.appendChild(drugiMenjamo);
+dopuni.appendChild(opetIzmena);
+
+master.replaceChild(noviParagraf,paragrafzaZamenu);
+master.replaceChild(ispisi,idemoDva);
+master.replaceChild(dopuni,sledi);
+
+master.style.color="blue";
+
+})
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+
+</html>

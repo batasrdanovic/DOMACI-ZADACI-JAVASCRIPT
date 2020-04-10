@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>16-FILIP DOMACI ZADATAK 3-URADJEN ZADATAK-BRISANJE HTML ELEMENATA ILI METODA REMOVE( )</title>
+<link rel="stylesheet" type="text/css" href="removemetoda1.css">
+</head>
+
+<body>
+
+<!--- 3.ZADATAK
+
+OBRISATI SVE ELEMENTE NEKE HTML STRANICE UZ POMOC METODE REMOVE().  -->
+
+
+<!--- OVO JE PRIMER KAKO SE BRISU SVI ELEMENTI KOJI NALAZE POD <ul id="bata"> do
+</ul>    --->
+
+<h1 id="naslov">Ovo su najbolje teniserke svih vremena</h1>
+<ul id="bata">
+    <li>Monica Seles je najbolja teniserka svih vremena</li>
+    <li>Stefi Graf ima najbolji forhend medju teniserkama</li>
+    <li>Martina Navratilova je osvojila 9 puta Grand Slem Vimbldona</li>
+</ul>
+
+<!-- OVO JE PRIMER KAKO SE BRISU NEKI OD  POJEDNIH ELEMENATA KOJI NALAZE POD 
+<li id="tenis">    --->
+
+
+<h1 id="naslov">Ovo su najbolje teniserke svih vremena</h1>
+<ul>
+    <li>Monica Seles je najbolja teniserka svih vremena</li>
+    <li>Stefi Graf ima najbolji forhend medju teniserkama</li>
+    <li id="tenis">Martina Navratilova je osvojila 9 puta Grend Slem Vimbldona</li>
+</ul>
+
+</body>
+
+
+
+<script>
+
+// OVDE PRIKAZUJE ZA BRISANJE SVIH ELEMENATA
+
+let a = document.getElementById("bata");
+a.remove()
+
+
+// OVDE PRIKAZUJE ZA BRISANJE POJEDNIH ELEMENATA
+
+let b = document.getElementById("tenis");
+b.remove()
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+<script src="removemetoda1.js"></script>
+</html>

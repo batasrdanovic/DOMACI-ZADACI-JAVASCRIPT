@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>16-FILIP DOMACI ZADATAK 5-URADJEN ZADATAK-DOM KOLEKCIJE</title>
+<link rel="stylesheet" type="text/css" href="domkolekcije1.css">
+</head>
+
+<body>
+
+<!---5.ZADATAK
+
+POTREBNO JE KREIRATI KOLEKCIJU OBJEKATA KOJA SADRZI SVE PARAGRAF ELEMENTE HTML
+STRANICE.
+ZATIM PRISTUPITI SVAKOM OBJEKTU I PROMENITI MU BOJU. --->
+
+
+<h1 id="futon">Murasaki Shikibu:"Prica o Genjiju-Genji no monogatari"</h1>
+<h1>Kenzaburo Oe:"Jednostavan zivot-Shizukana seikatsu"</h1>
+<h1>Nacume Soseki:"Dusa-Kokoro"</h1>
+<h1>Shiga Naoja:"Otsu Junkichi"</h1>
+<h1>Haruki Murakami:"Sputnik ljubav"</h1>
+<h1>Mijamoto Juriko:"Dve baste-Futatsu no niwa"</h1>
+
+
+
+<p id="kigaku">Genji no monogatari</p>
+<p>Shizukana seikatsu</p>
+<p>Kokoro</p>
+<p>Otsu Junkichi</p>
+<p>Sputnik ai</p>
+<p>Futatsu no niwa</p>
+
+
+
+<script>
+
+let a=document.getElementsByTagName("h1");
+
+
+function japanskiPisci(){
+    for(let i=0; i<a.length; i++){
+    a[i].style.color="orange";
+} 
+}
+
+document.getElementById("futon").addEventListener("mouseover", japanskiPisci);
+
+
+
+let b=document.getElementsByTagName("p");
+
+
+function poznataDela(){
+    for(let i=0; i<a.length; i++){
+    b[i].style.color="blue";
+} 
+}
+
+document.getElementById("kigaku").addEventListener("mouseover", poznataDela);
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
